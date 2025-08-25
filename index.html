@@ -1,0 +1,26 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de E-mail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Extrator de Corpo de E-mail</h1>
+        <p>Digite um e-mail para extrair a parte antes do "@".</p>
+        <div class="input-group">
+            <input type="email" id="email-input" placeholder="seu-email@provedor.com" autocomplete="off">
+            <button id="extract-button">Extrair</button>
+        </div>
+        <div id="result-container" class="hidden">
+            <label for="result-output">Corpo do e-mail extraído:</label>
+            <input type="text" id="result-output" readonly>
+        </div>
+        <div id="error-box" class="hidden">
+            <!-- As mensagens de erro aparecerão aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
